@@ -32,9 +32,16 @@
               <!-- <a class="nav-item nav-link" href="#">Login</a>
               <a class="nav-item nav-link" href="#">Register</a> -->
               <!-- <button class="noselect">Create Post</button> -->
-<!--                <h3 style="color: white;">Hello {{request.user}}</h3>-->
-            <h3 style="color:white;">Hello {{ request.user }}</h3>
-                
+              <!--<h3 style="color: white;">Hello {{request.user}}</h3>-->
+            {% comment %} <h3 style="color:white;">Hello {{ request.user }}</h3> {% endcomment %}
+            <a href="{% url 'profile' %}" id="auth-links">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Profile
+            </a>
+             
             <a href="{% url 'logout' %}" id="auth-links">
               <span></span>
               <span></span>
