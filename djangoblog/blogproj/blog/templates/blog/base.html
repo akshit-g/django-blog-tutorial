@@ -34,6 +34,14 @@
               <!-- <button class="noselect">Create Post</button> -->
               <!--<h3 style="color: white;">Hello {{request.user}}</h3>-->
             {% comment %} <h3 style="color:white;">Hello {{ request.user }}</h3> {% endcomment %}
+            <a href="{% url 'blog-new' %}" id="auth-links">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Create Post
+            </a>
+
             <a href="{% url 'profile' %}" id="auth-links">
               <span></span>
               <span></span>
